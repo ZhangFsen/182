@@ -1,0 +1,8 @@
+<!-- 启动页右上光晕（对应 HTML 版 .mj-b1：340px，右上出画） -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <gradient
+        android:type="radial"
+        android:gradientRadius="170dp"
+        android:startColor="#21FFFFFF"
+        android:endColor="#00FFFFFF" />
+</shape>

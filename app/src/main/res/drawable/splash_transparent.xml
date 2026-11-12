@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 启动页静态方案：原生启动图不留图标，只显示纯橙背景（windowSplashScreenBackground）。
+     图标、品牌名、标语、署名全部由 HTML 启动层画一次（静态、无动画），
+     避免「原生画一次 + HTML 画一次」造成的两个页面观感与交接跳动。 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <size android:width="1dp" android:height="1dp" />
+    <solid android:color="#00000000" />
+</shape>

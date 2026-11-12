@@ -1,0 +1,21 @@
+<!-- 启动页徽标：白圆角块 + 记字形，几何与 HTML 版定稿一致（等比 1.342，回退中心取路径外接框中心） -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,0h48a30,30 0 0 1 30,30v48a30,30 0 0 1 -30,30h-48a30,30 0 0 1 -30,-30v-48a30,30 0 0 1 30,-30z" />
+    <group
+        android:pivotX="0"
+        android:pivotY="0"
+        android:scaleX="1.342"
+        android:scaleY="1.342"
+        android:translateX="-17.8"
+        android:translateY="-18.47">
+        <path
+            android:fillColor="#FF7100"
+            android:pathData="M39,28h9l6,13l6,-13h9l-10,18h10v7h-11v7h11v7h-11v13h-9v-13h-11v-7h11v-7h-11v-7h10z" />
+    </group>
+</vector>

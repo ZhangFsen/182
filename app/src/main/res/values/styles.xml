@@ -1,0 +1,33 @@
+<resources>
+    <style name="AppTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">#FFF8EF</item>
+        <item name="android:navigationBarColor">#FFF8EF</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <!-- 系统启动图退场时由 postSplashScreenTheme 落地的过渡主题：
+         系统栏保持橙色，与启动图/启动层同色，避免「先米色再压回橙色」的一帧闪动；
+         原生启动层撤下时由代码 restoreAppSystemBars() 恢复为 AppTheme 的米色栏。
+         注意：parent 必须显式写 AppTheme —— 样式名不含点号，不会按名字隐式继承，
+         否则会丢掉 NoActionBar/windowNoTitle，系统会画出一条标题为「秒记账」的 ActionBar。 -->
+    <style name="AppSplashTheme" parent="AppTheme">
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">#FF7100</item>
+        <item name="android:navigationBarColor">#FF7100</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <style name="AppStartingTheme" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#FF7100</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_transparent</item>
+        <item name="windowSplashScreenIconBackgroundColor">#00000000</item>
+        <item name="windowSplashScreenAnimationDuration">0</item>
+        <item name="postSplashScreenTheme">@style/AppSplashTheme</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">#FF7100</item>
+        <item name="android:navigationBarColor">#FF7100</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+</resources>
